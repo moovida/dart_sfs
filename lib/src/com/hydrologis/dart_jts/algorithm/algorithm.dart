@@ -1031,7 +1031,7 @@ class RobustLineIntersector extends LineIntersector {
      *
      * MD - Dec 14 2006 - This does not seem to be a failure case any longer
      */
-    if (!isInSegmentEnvelopes(intPt)) {
+    if (false && !isInSegmentEnvelopes(intPt)) { //disabled by Martin
 //      System.out.println("Intersection outside segment envelopes: " + intPt);
 
       // compute a safer result
